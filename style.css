@@ -1,0 +1,138 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lexend',sans-serif;
+}
+
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100%;
+    background: url(bg.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.container{
+    width: 720px;
+    background-color: rgba(0,0,0,0.25);
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -ms-border-radius: 15px;
+    -o-border-radius: 15px;
+    padding: 30px 30px 25px;
+    color: #efefef;
+}
+
+header{
+    font-size: 2.2rem;
+    font-weight: 600;
+    text-align: center;
+}
+
+.container .content{
+    margin: 35px 0;
+}
+
+.quote-content{
+    display: flex;
+    justify-content: center;
+}
+
+.quote-content i{
+    font-size: 1rem;
+}
+.quote-content i:first-child{
+    margin: 3px 10px 0 0;
+}
+
+.quote-content i:last-child{
+    margin: 0 0 3px 10px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.quote{
+    font-size: 1.35rem;
+    text-align: center;
+    word-break: break-all;
+}
+.content .author{
+    display: flex;
+    justify-content: flex-end;
+    font-size: 1.1rem;
+    font-style: italic;
+    margin-top: 1.25rem;
+}
+
+.author span:first-child{
+    margin: -7px 5px 0 0;
+}
+
+.container .buttons{
+    border-top: 1px solid #ccc;
+}
+
+.buttons .features{
+    display: flex;
+    align-content: center;
+    justify-content: space-between;
+    margin: 1.25rem;
+}
+
+.features ul{
+    display: flex;
+}
+
+.features ul li{
+    list-style: none;
+    margin: 0 5px;
+    height: 50px;
+    width: 50px;
+    border: 3px solid #f72585;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #f72585;
+    transition: all 0.25s ease;
+    -webkit-transition: all 0.25s ease;
+    -moz-transition: all 0.25s ease;
+    -ms-transition: all 0.25s ease;
+    -o-transition: all 0.25s ease;
+}
+
+.features ul li:hover{
+    color: #efefef;
+    background: #f72585;
+    cursor: pointer;
+}
+
+.features button{
+    border: none;
+    outline: none;
+    color: #fff;
+    cursor: pointer;
+    font-size: 1rem;
+    padding: 13px 22px;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    background: #f72585;
+}
+
+button.loading{
+    opacity: 0.7; 
+    pointer-events: none;
+}
